@@ -46,7 +46,13 @@ O pipeline recebe documentos sintéticos em JSONL, fragmenta textos em trechos c
 
 
 ## Etapa 4 — Recuperação, processamento e cache
-_A preencher após implementação e testes._
+
+**O que falar (50–60 segundos):** a fila da etapa 3 agora chama um serviço de recuperação real sobre o índice JSONL gerado na etapa 2. A busca é lexical (sobreposição de termos), não semântica; respeita `top_k` e limite de bytes de contexto. A resposta é simulada por uma espera configurável, sem inferência de LLM. Um cache LRU compartilhado armazena respostas e métricas; são registrados hits, misses, evicções e tempo estimado economizado.
+
+**O que mostrar:** `retrieval/search.py`, `cache/lru.py`, `processing/service.py`; executar `scripts/run_service.py` com consultas repetidas e depois com cache pequeno para observar evicções. Mostrar `results/raw/service.json` e métricas de cache e contexto.
+
+**Sincronização e limite:** o cache protege check-compute-store com `threading.Lock`, evitando cálculos duplicados, mas serializando misses diferentes; a etapa 5 comparará com uma implementação insegura. `estimated_saved_ms` é soma de custos históricos evitados, não ganho líquido medido. Latência em hits pode incluir espera pelo lock. Consultas lexicais simuladas não demonstram qualidade de embeddings.
+
 
 ## Etapa 5 — Sincronização e falha controlada
 _A preencher após implementação e testes._

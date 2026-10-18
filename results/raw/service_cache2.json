@@ -1,0 +1,827 @@
+{
+  "producers": 2,
+  "consumers": 2,
+  "queue_capacity": 8,
+  "submitted": 40,
+  "completed": 40,
+  "lost": 0,
+  "duplicate_ids": 0,
+  "errors": [],
+  "max_queue_observed": 8,
+  "mean_producer_block_ms": 33.8086149999981,
+  "elapsed_ms": 1104.9402959997678,
+  "throughput_req_s": 36.20105099326417,
+  "results": [
+    {
+      "request_id": 0,
+      "worker": "consumer-0",
+      "queue_wait_ms": 0.3532569999151747,
+      "processing_ms": 24.47406699957355,
+      "total_ms": 24.827323999488726,
+      "status": "ok"
+    },
+    {
+      "request_id": 1,
+      "worker": "consumer-1",
+      "queue_wait_ms": 268.6915340000269,
+      "processing_ms": 26.87296600015543,
+      "total_ms": 295.5645000001823,
+      "status": "ok"
+    },
+    {
+      "request_id": 2,
+      "worker": "consumer-1",
+      "queue_wait_ms": 3.968752000218956,
+      "processing_ms": 47.86030600007507,
+      "total_ms": 51.829058000294026,
+      "status": "ok"
+    },
+    {
+      "request_id": 3,
+      "worker": "consumer-0",
+      "queue_wait_ms": 269.7420710001097,
+      "processing_ms": 55.38585900012549,
+      "total_ms": 325.1279300002352,
+      "status": "ok"
+    },
+    {
+      "request_id": 4,
+      "worker": "consumer-0",
+      "queue_wait_ms": 24.78025400068873,
+      "processing_ms": 55.731595999532146,
+      "total_ms": 80.51185000022087,
+      "status": "ok"
+    },
+    {
+      "request_id": 5,
+      "worker": "consumer-0",
+      "queue_wait_ms": 268.5337699995216,
+      "processing_ms": 83.31833100055519,
+      "total_ms": 351.8521010000768,
+      "status": "ok"
+    },
+    {
+      "request_id": 6,
+      "worker": "consumer-1",
+      "queue_wait_ms": 51.805594000143174,
+      "processing_ms": 57.040704999963054,
+      "total_ms": 108.84629900010623,
+      "status": "ok"
+    },
+    {
+      "request_id": 7,
+      "worker": "consumer-1",
+      "queue_wait_ms": 274.2564330001187,
+      "processing_ms": 55.471781000051124,
+      "total_ms": 329.7282140001698,
+      "status": "ok"
+    },
+    {
+      "request_id": 8,
+      "worker": "consumer-0",
+      "queue_wait_ms": 80.63775400023587,
+      "processing_ms": 55.694319999929576,
+      "total_ms": 136.33207400016545,
+      "status": "ok"
+    },
+    {
+      "request_id": 9,
+      "worker": "consumer-1",
+      "queue_wait_ms": 270.28235900070285,
+      "processing_ms": 58.01829199936037,
+      "total_ms": 328.3006510000632,
+      "status": "ok"
+    },
+    {
+      "request_id": 10,
+      "worker": "consumer-1",
+      "queue_wait_ms": 108.91149800045241,
+      "processing_ms": 54.66113300008146,
+      "total_ms": 163.57263100053387,
+      "status": "ok"
+    },
+    {
+      "request_id": 11,
+      "worker": "consumer-1",
+      "queue_wait_ms": 274.1452419995767,
+      "processing_ms": 54.345837000255415,
+      "total_ms": 328.4910789998321,
+      "status": "ok"
+    },
+    {
+      "request_id": 12,
+      "worker": "consumer-0",
+      "queue_wait_ms": 136.37989299968467,
+      "processing_ms": 54.50603200006299,
+      "total_ms": 190.88592499974766,
+      "status": "ok"
+    },
+    {
+      "request_id": 13,
+      "worker": "consumer-1",
+      "queue_wait_ms": 278.8272590005363,
+      "processing_ms": 55.40454299989506,
+      "total_ms": 334.23180200043134,
+      "status": "ok"
+    },
+    {
+      "request_id": 14,
+      "worker": "consumer-1",
+      "queue_wait_ms": 163.63165999973717,
+      "processing_ms": 54.34584100021311,
+      "total_ms": 217.97750099995028,
+      "status": "ok"
+    },
+    {
+      "request_id": 15,
+      "worker": "consumer-1",
+      "queue_wait_ms": 273.5990329993001,
+      "processing_ms": 55.26693200044974,
+      "total_ms": 328.86596499974985,
+      "status": "ok"
+    },
+    {
+      "request_id": 16,
+      "worker": "consumer-0",
+      "queue_wait_ms": 190.94190100076958,
+      "processing_ms": 54.44111099950533,
+      "total_ms": 245.3830120002749,
+      "status": "ok"
+    },
+    {
+      "request_id": 17,
+      "worker": "consumer-1",
+      "queue_wait_ms": 278.76930100046593,
+      "processing_ms": 55.02676000014617,
+      "total_ms": 333.7960610006121,
+      "status": "ok"
+    },
+    {
+      "request_id": 18,
+      "worker": "consumer-1",
+      "queue_wait_ms": 214.07840699976077,
+      "processing_ms": 54.69653999989532,
+      "total_ms": 268.7749469996561,
+      "status": "ok"
+    },
+    {
+      "request_id": 19,
+      "worker": "consumer-1",
+      "queue_wait_ms": 278.32577400022274,
+      "processing_ms": 56.15347599996312,
+      "total_ms": 334.47925000018586,
+      "status": "ok"
+    },
+    {
+      "request_id": 20,
+      "worker": "consumer-0",
+      "queue_wait_ms": 241.47974100014835,
+      "processing_ms": 81.61985900005675,
+      "total_ms": 323.0996000002051,
+      "status": "ok"
+    },
+    {
+      "request_id": 21,
+      "worker": "consumer-0",
+      "queue_wait_ms": 248.36439699993207,
+      "processing_ms": 55.69634899984521,
+      "total_ms": 304.0607459997773,
+      "status": "ok"
+    },
+    {
+      "request_id": 22,
+      "worker": "consumer-1",
+      "queue_wait_ms": 270.0761699998111,
+      "processing_ms": 55.05614499998046,
+      "total_ms": 325.13231499979156,
+      "status": "ok"
+    },
+    {
+      "request_id": 23,
+      "worker": "consumer-1",
+      "queue_wait_ms": 249.2312740005218,
+      "processing_ms": 55.50873199990747,
+      "total_ms": 304.7400060004293,
+      "status": "ok"
+    },
+    {
+      "request_id": 24,
+      "worker": "consumer-1",
+      "queue_wait_ms": 268.8649510000687,
+      "processing_ms": 55.296915999861085,
+      "total_ms": 324.16186699992977,
+      "status": "ok"
+    },
+    {
+      "request_id": 25,
+      "worker": "consumer-0",
+      "queue_wait_ms": 249.69497799975215,
+      "processing_ms": 55.38334699940606,
+      "total_ms": 305.0783249991582,
+      "status": "ok"
+    },
+    {
+      "request_id": 26,
+      "worker": "consumer-1",
+      "queue_wait_ms": 268.97383199957403,
+      "processing_ms": 27.69209200050682,
+      "total_ms": 296.66592400008085,
+      "status": "ok"
+    },
+    {
+      "request_id": 27,
+      "worker": "consumer-1",
+      "queue_wait_ms": 250.04045700006827,
+      "processing_ms": 81.6845959998318,
+      "total_ms": 331.7250529999001,
+      "status": "ok"
+    },
+    {
+      "request_id": 28,
+      "worker": "consumer-0",
+      "queue_wait_ms": 270.27415500015195,
+      "processing_ms": 56.33533299987903,
+      "total_ms": 326.609488000031,
+      "status": "ok"
+    },
+    {
+      "request_id": 29,
+      "worker": "consumer-0",
+      "queue_wait_ms": 249.61131200052478,
+      "processing_ms": 26.816367999344948,
+      "total_ms": 276.4276799998697,
+      "status": "ok"
+    },
+    {
+      "request_id": 30,
+      "worker": "consumer-0",
+      "queue_wait_ms": 276.85514299992064,
+      "processing_ms": 56.41464300060761,
+      "total_ms": 333.26978600052826,
+      "status": "ok"
+    },
+    {
+      "request_id": 31,
+      "worker": "consumer-0",
+      "queue_wait_ms": 248.845240999799,
+      "processing_ms": 55.230156000106945,
+      "total_ms": 304.07539699990593,
+      "status": "ok"
+    },
+    {
+      "request_id": 32,
+      "worker": "consumer-0",
+      "queue_wait_ms": 279.06587300003594,
+      "processing_ms": 54.71397499968589,
+      "total_ms": 333.7798479997218,
+      "status": "ok"
+    },
+    {
+      "request_id": 33,
+      "worker": "consumer-1",
+      "queue_wait_ms": 248.5641499997655,
+      "processing_ms": 82.73300299970288,
+      "total_ms": 331.2971529994684,
+      "status": "ok"
+    },
+    {
+      "request_id": 34,
+      "worker": "consumer-0",
+      "queue_wait_ms": 278.7142179995499,
+      "processing_ms": 55.3984970001693,
+      "total_ms": 334.1127149997192,
+      "status": "ok"
+    },
+    {
+      "request_id": 35,
+      "worker": "consumer-0",
+      "queue_wait_ms": 243.95843599995715,
+      "processing_ms": 27.360296000551898,
+      "total_ms": 271.31873200050904,
+      "status": "ok"
+    },
+    {
+      "request_id": 36,
+      "worker": "consumer-0",
+      "queue_wait_ms": 274.1188840000177,
+      "processing_ms": 55.40454000038153,
+      "total_ms": 329.52342400039925,
+      "status": "ok"
+    },
+    {
+      "request_id": 37,
+      "worker": "consumer-0",
+      "queue_wait_ms": 242.9626630000712,
+      "processing_ms": 82.90840999961802,
+      "total_ms": 325.8710729996892,
+      "status": "ok"
+    },
+    {
+      "request_id": 38,
+      "worker": "consumer-0",
+      "queue_wait_ms": 278.58794599978864,
+      "processing_ms": 55.32972699984384,
+      "total_ms": 333.9176729996325,
+      "status": "ok"
+    },
+    {
+      "request_id": 39,
+      "worker": "consumer-1",
+      "queue_wait_ms": 248.10966799941525,
+      "processing_ms": 27.44124500077305,
+      "total_ms": 275.5509130001883,
+      "status": "ok"
+    }
+  ],
+  "cache": {
+    "hits": 0,
+    "misses": 40,
+    "evictions": 38,
+    "size": 2,
+    "capacity": 2,
+    "estimated_saved_ms": 0
+  },
+  "query_metrics": [
+    {
+      "query": "memoria swap consulta0",
+      "cache_hit": false,
+      "total_ms": 24.45948600052361,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-5977f97290ba",
+      "retrieval_ms": 3.6001050002596457,
+      "response_ms": 20.753436000632064,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "threads mutex consulta2",
+      "cache_hit": false,
+      "total_ms": 47.849229000348714,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-cd22a24f6bc4",
+      "retrieval_ms": 4.744001999824832,
+      "response_ms": 22.111092999693938,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "fila consumidores consulta4",
+      "cache_hit": false,
+      "total_ms": 55.709852000290994,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-83f41c99114a",
+      "retrieval_ms": 5.463077999593224,
+      "response_ms": 22.9949119993762,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "pagina consulta1",
+      "cache_hit": false,
+      "total_ms": 57.01809000038338,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-a14ef2c5fefa",
+      "retrieval_ms": 5.201482000302349,
+      "response_ms": 22.784854999372328,
+      "chunk_count": 0,
+      "context_bytes": 0,
+      "approx_tokens": 0
+    },
+    {
+      "query": "armazenamento mmap consulta3",
+      "cache_hit": false,
+      "total_ms": 55.674227999588766,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-fa0ba2ee150c",
+      "retrieval_ms": 5.018093999751727,
+      "response_ms": 22.224922000532388,
+      "chunk_count": 3,
+      "context_bytes": 857,
+      "approx_tokens": 214
+    },
+    {
+      "query": "rag contexto consulta0",
+      "cache_hit": false,
+      "total_ms": 54.64195600052335,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-1f1c5750e1d3",
+      "retrieval_ms": 4.718224000498594,
+      "response_ms": 22.296365999864065,
+      "chunk_count": 3,
+      "context_bytes": 1284,
+      "approx_tokens": 321
+    },
+    {
+      "query": "cache consulta2",
+      "cache_hit": false,
+      "total_ms": 54.48804600018775,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-b21a7f770b11",
+      "retrieval_ms": 4.806722000466834,
+      "response_ms": 22.206568999536103,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "memoria swap consulta4",
+      "cache_hit": false,
+      "total_ms": 54.32500099959725,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-becc77ade9f5",
+      "retrieval_ms": 4.627004999747442,
+      "response_ms": 22.22310999968613,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "threads mutex consulta1",
+      "cache_hit": false,
+      "total_ms": 54.4302329999482,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-cc91472d0385",
+      "retrieval_ms": 5.078599000626127,
+      "response_ms": 22.152370999720006,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "fila consumidores consulta3",
+      "cache_hit": false,
+      "total_ms": 54.68403099985153,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-da3944c8b04f",
+      "retrieval_ms": 4.900642999928095,
+      "response_ms": 22.184438000294904,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "armazenamento mmap consulta1",
+      "cache_hit": false,
+      "total_ms": 26.859100999899965,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-11b8cf7e0832",
+      "retrieval_ms": 4.573805999825709,
+      "response_ms": 22.168197000610235,
+      "chunk_count": 3,
+      "context_bytes": 857,
+      "approx_tokens": 214
+    },
+    {
+      "query": "pagina consulta0",
+      "cache_hit": false,
+      "total_ms": 81.60981999935757,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-084ea118b9c0",
+      "retrieval_ms": 4.973249000613578,
+      "response_ms": 22.198681000190845,
+      "chunk_count": 0,
+      "context_bytes": 0,
+      "approx_tokens": 0
+    },
+    {
+      "query": "armazenamento mmap consulta2",
+      "cache_hit": false,
+      "total_ms": 55.04491400006373,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-ba536a248d71",
+      "retrieval_ms": 5.377137000323273,
+      "response_ms": 22.11129500028619,
+      "chunk_count": 3,
+      "context_bytes": 857,
+      "approx_tokens": 214
+    },
+    {
+      "query": "rag contexto consulta3",
+      "cache_hit": false,
+      "total_ms": 55.37103599999682,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-bdca45c4b3d8",
+      "retrieval_ms": 5.297386999700393,
+      "response_ms": 22.161474999847997,
+      "chunk_count": 3,
+      "context_bytes": 1284,
+      "approx_tokens": 321
+    },
+    {
+      "query": "rag contexto consulta4",
+      "cache_hit": false,
+      "total_ms": 55.2783900002396,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-0421a90f29d1",
+      "retrieval_ms": 5.140835000020161,
+      "response_ms": 22.219340999981796,
+      "chunk_count": 3,
+      "context_bytes": 1284,
+      "approx_tokens": 321
+    },
+    {
+      "query": "cache consulta1",
+      "cache_hit": false,
+      "total_ms": 27.66890400016564,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-1a2b77be9f3e",
+      "retrieval_ms": 4.713342000286502,
+      "response_ms": 22.78292900064116,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "cache consulta0",
+      "cache_hit": false,
+      "total_ms": 83.29459299966402,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-938ae5f2b69e",
+      "retrieval_ms": 5.056756000158202,
+      "response_ms": 22.45653800036962,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "memoria swap consulta2",
+      "cache_hit": false,
+      "total_ms": 55.448195000280975,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-97c9b51c58a2",
+      "retrieval_ms": 4.651216999263852,
+      "response_ms": 22.458561999883386,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "memoria swap consulta3",
+      "cache_hit": false,
+      "total_ms": 56.31172599987622,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-5eaf647849bc",
+      "retrieval_ms": 5.731481999646348,
+      "response_ms": 22.749664000002667,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "threads mutex consulta4",
+      "cache_hit": false,
+      "total_ms": 58.000459000140836,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-bda72b12d05f",
+      "retrieval_ms": 6.738895000125922,
+      "response_ms": 22.205074000339664,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "threads mutex consulta0",
+      "cache_hit": false,
+      "total_ms": 56.39833199984423,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-a0e11764fb3f",
+      "retrieval_ms": 4.729223999675014,
+      "response_ms": 22.25366499988013,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "fila consumidores consulta1",
+      "cache_hit": false,
+      "total_ms": 54.32775099961873,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-618b5d2087cb",
+      "retrieval_ms": 4.63453100019251,
+      "response_ms": 22.21330799966381,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "fila consumidores consulta2",
+      "cache_hit": false,
+      "total_ms": 54.70177500046702,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-bc9464a4c450",
+      "retrieval_ms": 5.185336999602441,
+      "response_ms": 22.162487999594305,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "pagina consulta3",
+      "cache_hit": false,
+      "total_ms": 55.380793000040285,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-7d492f1c0eb1",
+      "retrieval_ms": 5.314666000231227,
+      "response_ms": 22.234760000173992,
+      "chunk_count": 0,
+      "context_bytes": 0,
+      "approx_tokens": 0
+    },
+    {
+      "query": "pagina consulta4",
+      "cache_hit": false,
+      "total_ms": 55.37320300027204,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-0726103bbb63",
+      "retrieval_ms": 4.89569500041398,
+      "response_ms": 22.374289000254066,
+      "chunk_count": 0,
+      "context_bytes": 0,
+      "approx_tokens": 0
+    },
+    {
+      "query": "armazenamento mmap consulta0",
+      "cache_hit": false,
+      "total_ms": 55.24905600032071,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-e96ec6448836",
+      "retrieval_ms": 5.115816000397899,
+      "response_ms": 22.280738000517886,
+      "chunk_count": 3,
+      "context_bytes": 857,
+      "approx_tokens": 214
+    },
+    {
+      "query": "armazenamento mmap consulta1",
+      "cache_hit": false,
+      "total_ms": 55.38582600001973,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-11b8cf7e0832",
+      "retrieval_ms": 5.181556000025012,
+      "response_ms": 22.27479199973459,
+      "chunk_count": 3,
+      "context_bytes": 857,
+      "approx_tokens": 214
+    },
+    {
+      "query": "rag contexto consulta2",
+      "cache_hit": false,
+      "total_ms": 55.00837700037664,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-a55aba04dd11",
+      "retrieval_ms": 4.5332479994613095,
+      "response_ms": 22.461489999841433,
+      "chunk_count": 3,
+      "context_bytes": 1284,
+      "approx_tokens": 321
+    },
+    {
+      "query": "rag contexto consulta3",
+      "cache_hit": false,
+      "total_ms": 55.31009799960884,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-bdca45c4b3d8",
+      "retrieval_ms": 5.618350000077044,
+      "response_ms": 22.191858999576652,
+      "chunk_count": 3,
+      "context_bytes": 1284,
+      "approx_tokens": 321
+    },
+    {
+      "query": "cache consulta4",
+      "cache_hit": false,
+      "total_ms": 56.13017799987574,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-ab2a18bfb941",
+      "retrieval_ms": 4.975465000825352,
+      "response_ms": 22.779976000492752,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "memoria swap consulta1",
+      "cache_hit": false,
+      "total_ms": 55.68670600041514,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-c242a9e309e6",
+      "retrieval_ms": 5.118451000271307,
+      "response_ms": 22.112067000307434,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "threads mutex consulta3",
+      "cache_hit": false,
+      "total_ms": 55.48434299998917,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-5aed5d5df3eb",
+      "retrieval_ms": 4.8747770006229985,
+      "response_ms": 22.787657999288058,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "fila consumidores consulta0",
+      "cache_hit": false,
+      "total_ms": 55.36502999984805,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-b2caf8e35fe2",
+      "retrieval_ms": 4.853573000218603,
+      "response_ms": 22.23186599985638,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "armazenamento mmap consulta4",
+      "cache_hit": false,
+      "total_ms": 26.799803000358224,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-090a907fda3c",
+      "retrieval_ms": 4.529799000010826,
+      "response_ms": 22.156532999360934,
+      "chunk_count": 3,
+      "context_bytes": 857,
+      "approx_tokens": 214
+    },
+    {
+      "query": "pagina consulta2",
+      "cache_hit": false,
+      "total_ms": 81.66041599997698,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-4502912fd9d7",
+      "retrieval_ms": 4.991050000171526,
+      "response_ms": 22.229088000131014,
+      "chunk_count": 0,
+      "context_bytes": 0,
+      "approx_tokens": 0
+    },
+    {
+      "query": "rag contexto consulta1",
+      "cache_hit": false,
+      "total_ms": 55.20660399997723,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-d64baeb18afa",
+      "retrieval_ms": 4.801157999281713,
+      "response_ms": 22.78167900021799,
+      "chunk_count": 3,
+      "context_bytes": 1284,
+      "approx_tokens": 321
+    },
+    {
+      "query": "memoria swap consulta0",
+      "cache_hit": false,
+      "total_ms": 27.27146699999139,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-5977f97290ba",
+      "retrieval_ms": 4.875437999544374,
+      "response_ms": 22.217920000002778,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "cache consulta3",
+      "cache_hit": false,
+      "total_ms": 82.71475200035638,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-45165f677d67",
+      "retrieval_ms": 4.51254100062215,
+      "response_ms": 22.80945599977713,
+      "chunk_count": 3,
+      "context_bytes": 945,
+      "approx_tokens": 236
+    },
+    {
+      "query": "fila consumidores consulta4",
+      "cache_hit": false,
+      "total_ms": 27.416922000156774,
+      "worker": "consumer-1",
+      "response": "resposta-simulada-83f41c99114a",
+      "retrieval_ms": 4.461514000468014,
+      "response_ms": 22.78621400000702,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    },
+    {
+      "query": "threads mutex consulta2",
+      "cache_hit": false,
+      "total_ms": 82.8855529998691,
+      "worker": "consumer-0",
+      "response": "resposta-simulada-cd22a24f6bc4",
+      "retrieval_ms": 4.6991250001156,
+      "response_ms": 22.918613000001642,
+      "chunk_count": 3,
+      "context_bytes": 1036,
+      "approx_tokens": 259
+    }
+  ],
+  "index_records": 480
+}
