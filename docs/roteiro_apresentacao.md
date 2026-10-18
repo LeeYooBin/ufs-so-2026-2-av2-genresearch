@@ -19,7 +19,22 @@ O GenResearch-Servidor é uma aplicação experimental individual em Python exec
 **Ainda não afirmar:** resultados de benchmarks, desempenho de mmap, eficácia de cache ou ausência de condições de corrida. Isso só será conhecido após executar os experimentos.
 
 ## Etapa 2 — Ingestão e armazenamento
-_A preencher após implementação e testes._
+
+**O que falar (40–50 segundos):**
+O pipeline recebe documentos sintéticos em JSONL, fragmenta textos em trechos com sobreposição configurável, produz vetores simulados determinísticos e grava um índice persistente em JSONL. A simulação permite experimentos controlados sem o custo de um modelo real; não constitui recuperação semântica de qualidade. Dois leitores oferecem leitura convencional (`read`) e mapeamento de arquivo (`mmap`), com a mesma saída lógica. Não afirmar superioridade de desempenho sem benchmarks.
+
+**O que mostrar:**
+- `src/genresearch/ingestion/pipeline.py`: geração, fragmentação e vetorização.
+- `src/genresearch/storage/readers.py`: `read_standard` versus `read_mapped`.
+- `python scripts/run_ingestion.py --documents 120` e o resumo com contagens e bytes reais.
+- `python -m unittest discover -s tests -v` e equivalência dos leitores.
+
+**Evidências:**
+- Resumo da ingestão (documentos, trechos, tamanho do corpus/índice).
+- Testes automatizados e commit da etapa.
+
+**Limitação:** `mmap[:]` copia os dados para `bytes`; a comparação futura deverá explicitar essa escolha e, se necessário, comparar acesso incremental sem cópia. C1/C2 ainda não foram medidos.
+
 
 ## Etapa 3 — Fila e trabalhadores
 _A preencher após implementação e testes._
