@@ -11,3 +11,4 @@ logs/*
 !logs/.gitkeep
 data/generated/*
 !data/generated/.gitkeep
+notes.md
