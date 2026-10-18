@@ -36,6 +36,8 @@ def run_pipeline(queries: list[str], producers: int = 2, consumers: int = 2,
     start = time.perf_counter()
     maximum_queue = 0
     put_waits: list[float] = []
+    queue_samples: list[int] = []
+    busy_ms: dict[str, float] = {f"consumer-{i}": 0.0 for i in range(consumers)}
     handler = handler or (lambda query: time.sleep(processing_ms / 1000))
 
     def producer(pid: int) -> None:
@@ -46,7 +48,9 @@ def run_pipeline(queries: list[str], producers: int = 2, consumers: int = 2,
             waited = (time.perf_counter() - before) * 1000
             with lock:
                 put_waits.append(waited)
-                maximum_queue = max(maximum_queue, tasks.qsize())
+                depth = tasks.qsize()
+                queue_samples.append(depth)
+                maximum_queue = max(maximum_queue, depth)
 
     def consumer(cid: int) -> None:
         while True:
@@ -70,6 +74,7 @@ def run_pipeline(queries: list[str], producers: int = 2, consumers: int = 2,
                                 (completed_at - enqueued_at) * 1000, status)
                 with lock:
                     records.append(result)
+                    busy_ms[f"consumer-{cid}"] += result.processing_ms
             finally:
                 tasks.task_done()
 
@@ -93,6 +98,9 @@ def run_pipeline(queries: list[str], producers: int = 2, consumers: int = 2,
         'lost': len(set(range(len(queries))) - set(ids)),
         'duplicate_ids': len(ids) - len(set(ids)), 'errors': errors,
         'max_queue_observed': maximum_queue,
+        'mean_queue_observed_at_put': sum(queue_samples) / len(queue_samples) if queue_samples else 0,
+        'worker_processing_fraction': {name: round(ms / (elapsed * 1000), 6) if elapsed else 0
+                                       for name, ms in busy_ms.items()},
         'mean_producer_block_ms': sum(put_waits) / len(put_waits) if put_waits else 0,
         'elapsed_ms': elapsed * 1000,
         'throughput_req_s': len(records) / elapsed if elapsed else 0,

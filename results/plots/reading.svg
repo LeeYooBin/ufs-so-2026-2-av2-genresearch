@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="227" viewBox="0 0 850 227">
+<rect width="100%" height="100%" fill="white"/>
+<text x="16" y="26" font-size="18" font-family="sans-serif">Leitura de indice C1 vs C2</text>
+<text x="16" y="46" font-size="12" fill="#555" font-family="sans-serif">Primeira leitura (ms)</text>
+<text x="16" y="84" font-size="13" font-family="sans-serif">C1 120 docs</text>
+<rect x="290" y="67" width="170" height="22" fill="#2563a5"/>
+<text x="470" y="83" font-size="12" font-family="sans-serif">1.32</text>
+<text x="16" y="122" font-size="13" font-family="sans-serif">C2 120 docs</text>
+<rect x="290" y="105" width="39" height="22" fill="#2563a5"/>
+<text x="339" y="121" font-size="12" font-family="sans-serif">0.30</text>
+<text x="16" y="160" font-size="13" font-family="sans-serif">C1 1200 docs</text>
+<rect x="290" y="143" width="480" height="22" fill="#2563a5"/>
+<text x="780" y="159" font-size="12" font-family="sans-serif">3.73</text>
+<text x="16" y="198" font-size="13" font-family="sans-serif">C2 1200 docs</text>
+<rect x="290" y="181" width="307" height="22" fill="#2563a5"/>
+<text x="607" y="197" font-size="12" font-family="sans-serif">2.38</text>
+</svg>

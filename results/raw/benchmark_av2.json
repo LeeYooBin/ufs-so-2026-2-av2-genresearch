@@ -1,0 +1,2448 @@
+{
+  "metadata": {
+    "timestamp_utc": "2026-10-18T05:39:20.972334+00:00",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "kernel": "6.6.87.2-microsoft-standard-WSL2",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "command": [
+      "scripts/run_benchmarks.py",
+      "--repetitions",
+      "3"
+    ],
+    "commit": "c9cec8b112341aa847a84d5b388b9623b1dc5ac3",
+    "filesystems": "Filesystem     Type  1K-blocks     Used Available Use% Mounted on\n/dev/sdd       ext4 1055762868 22512924 979546472   3% /",
+    "note": "RSS/VSZ coletados em dois instantes; podem subestimar picos. /proc/self/io read_bytes mede E/S física e pode ser zero com cache de páginas quente."
+  },
+  "configs": [
+    {
+      "case": "C1",
+      "documents": 120
+    },
+    {
+      "case": "C2",
+      "documents": 120
+    },
+    {
+      "case": "C1",
+      "documents": 1200
+    },
+    {
+      "case": "C2",
+      "documents": 1200
+    },
+    {
+      "case": "C3",
+      "consumers": 1,
+      "cache_capacity": 1,
+      "unique_queries": 40
+    },
+    {
+      "case": "C3",
+      "consumers": 2,
+      "cache_capacity": 1,
+      "unique_queries": 40
+    },
+    {
+      "case": "C3",
+      "consumers": 4,
+      "cache_capacity": 1,
+      "unique_queries": 40
+    },
+    {
+      "case": "C4",
+      "cache_capacity": 2,
+      "unique_queries": 5
+    },
+    {
+      "case": "C4",
+      "cache_capacity": 8,
+      "unique_queries": 5
+    },
+    {
+      "case": "C4",
+      "cache_capacity": 8,
+      "unique_queries": 40
+    },
+    {
+      "case": "C5",
+      "documents": 120
+    },
+    {
+      "case": "C5",
+      "documents": 1200
+    },
+    {
+      "case": "C6"
+    }
+  ],
+  "runs": [
+    {
+      "case": "C1",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "read_ms_first": 1.7169140010082629,
+      "read_ms_second": 2.1715859984396957,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "read_all",
+      "elapsed_ms": 4.274587001418695,
+      "timestamp_utc": "2026-10-18T05:38:56.836958+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 19456,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 26584,
+        "threads_end": 1,
+        "minor_faults_delta": 136,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 546188,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15357760,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15357256,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 0
+    },
+    {
+      "case": "C1",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "read_ms_first": 1.3369380012591137,
+      "read_ms_second": 1.695195000138483,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "read_all",
+      "elapsed_ms": 3.242070000851527,
+      "timestamp_utc": "2026-10-18T05:38:57.034173+00:00",
+      "process": {
+        "rss_kib_start": 18944,
+        "rss_kib_end": 19332,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 26584,
+        "threads_end": 1,
+        "minor_faults_delta": 135,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 546188,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15357192,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15356688,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 0
+    },
+    {
+      "case": "C1",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "read_ms_first": 0.910920000023907,
+      "read_ms_second": 1.5156160006881692,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "read_all",
+      "elapsed_ms": 2.6316429994039936,
+      "timestamp_utc": "2026-10-18T05:38:57.221224+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 19544,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 26584,
+        "threads_end": 1,
+        "minor_faults_delta": 136,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 546188,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15357408,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15356904,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 0
+    },
+    {
+      "case": "C2",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "read_ms_first": 0.2934040003310656,
+      "read_ms_second": 0.5420359993877355,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "mmap_slice_copy",
+      "elapsed_ms": 1.0695389992179116,
+      "timestamp_utc": "2026-10-18T05:38:57.402828+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 19608,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 26584,
+        "threads_end": 1,
+        "minor_faults_delta": 147,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15357256,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15356248,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 1
+    },
+    {
+      "case": "C2",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "read_ms_first": 0.3137009989586659,
+      "read_ms_second": 0.3491400002531009,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "mmap_slice_copy",
+      "elapsed_ms": 0.8723119990463601,
+      "timestamp_utc": "2026-10-18T05:38:57.599737+00:00",
+      "process": {
+        "rss_kib_start": 18944,
+        "rss_kib_end": 19436,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 26584,
+        "threads_end": 1,
+        "minor_faults_delta": 146,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15357856,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15356848,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 1
+    },
+    {
+      "case": "C2",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "read_ms_first": 0.29606299904116895,
+      "read_ms_second": 0.30793800033279695,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "mmap_slice_copy",
+      "elapsed_ms": 0.8014349987206515,
+      "timestamp_utc": "2026-10-18T05:38:57.789303+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 19468,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 26584,
+        "threads_end": 1,
+        "minor_faults_delta": 146,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15357592,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15357088,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 1
+    },
+    {
+      "case": "C1",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "read_ms_first": 7.015723998847534,
+      "read_ms_second": 7.648099001016817,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "read_all",
+      "elapsed_ms": 14.949477999834926,
+      "timestamp_utc": "2026-10-18T05:38:57.984897+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 21984,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 28972,
+        "threads_end": 1,
+        "minor_faults_delta": 1329,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 5436138,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15358044,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15354300,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 2
+    },
+    {
+      "case": "C1",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "read_ms_first": 2.308129000084591,
+      "read_ms_second": 2.7025740000681253,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "read_all",
+      "elapsed_ms": 5.238646999714547,
+      "timestamp_utc": "2026-10-18T05:38:58.174016+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 21896,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 28972,
+        "threads_end": 1,
+        "minor_faults_delta": 1330,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 5436138,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15358984,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15355240,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 2
+    },
+    {
+      "case": "C1",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "read_ms_first": 1.860565998867969,
+      "read_ms_second": 2.1170130003156373,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "read_all",
+      "elapsed_ms": 4.206412999337772,
+      "timestamp_utc": "2026-10-18T05:38:58.358172+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 21820,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 28972,
+        "threads_end": 1,
+        "minor_faults_delta": 1330,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 5436138,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15359240,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15355496,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 2
+    },
+    {
+      "case": "C2",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "read_ms_first": 2.4286949992529117,
+      "read_ms_second": 2.625010998599464,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "mmap_slice_copy",
+      "elapsed_ms": 5.28098900031182,
+      "timestamp_utc": "2026-10-18T05:38:58.540126+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 21944,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 28972,
+        "threads_end": 1,
+        "minor_faults_delta": 1413,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15361212,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15357288,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 3
+    },
+    {
+      "case": "C2",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "read_ms_first": 2.369584999541985,
+      "read_ms_second": 2.6399029993626755,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "mmap_slice_copy",
+      "elapsed_ms": 5.27214300018386,
+      "timestamp_utc": "2026-10-18T05:38:58.733373+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 21892,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 28972,
+        "threads_end": 1,
+        "minor_faults_delta": 1414,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15361464,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15357540,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 3
+    },
+    {
+      "case": "C2",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "read_ms_first": 2.3487889993702993,
+      "read_ms_second": 2.598408000267227,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "mmap_slice_copy",
+      "elapsed_ms": 5.173186998945312,
+      "timestamp_utc": "2026-10-18T05:38:58.921241+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 21996,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 28972,
+        "threads_end": 1,
+        "minor_faults_delta": 1414,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15359892,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15355644,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 3
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 1,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 1,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 36.698019350069444,
+        "elapsed_ms": 1067.5040509995597,
+        "throughput_req_s": 37.47058380017005
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 248.75826280008368,
+      "latency_median_ms": 284.19856799973786,
+      "latency_p95_ms": 293.1862881993766,
+      "retrieval_mean_ms_misses": 4.561262399784027,
+      "response_mean_ms_misses": 21.920359449995885,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 222.17267870005344,
+      "elapsed_ms": 1072.5041929999861,
+      "timestamp_utc": "2026-10-18T05:39:00.182903+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20572,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 248668,
+        "threads_end": 1,
+        "minor_faults_delta": 385,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15361408,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15360820,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 4
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 1,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 1,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 36.94007332514957,
+        "elapsed_ms": 1070.7714399995893,
+        "throughput_req_s": 37.356244765003574
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 250.07901562512416,
+      "latency_median_ms": 289.1515974988579,
+      "latency_p95_ms": 291.67935374871377,
+      "retrieval_mean_ms_misses": 4.5335035002153745,
+      "response_mean_ms_misses": 22.038819874842375,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 223.39682125016225,
+      "elapsed_ms": 1075.50817900119,
+      "timestamp_utc": "2026-10-18T05:39:01.465547+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20572,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 248668,
+        "threads_end": 1,
+        "minor_faults_delta": 385,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362860,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15361096,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 4
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 1,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 1,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 36.77672055014227,
+        "elapsed_ms": 1069.5083169994177,
+        "throughput_req_s": 37.40036366638351
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 249.2855295253321,
+      "latency_median_ms": 288.4025620005559,
+      "latency_p95_ms": 291.4609323998775,
+      "retrieval_mean_ms_misses": 4.491989975076649,
+      "response_mean_ms_misses": 22.045553200086943,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 222.6354258250467,
+      "elapsed_ms": 1075.8594539984188,
+      "timestamp_utc": "2026-10-18T05:39:02.747822+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 20404,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 248668,
+        "threads_end": 1,
+        "minor_faults_delta": 385,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15363452,
+          "Cached": 188068,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15361940,
+          "Cached": 188068,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 4
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 33.301564375142334,
+        "elapsed_ms": 1086.9990520004649,
+        "throughput_req_s": 36.79856015181041
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 272.1200125249652,
+      "latency_median_ms": 320.68082750083704,
+      "latency_p95_ms": 330.15261264954455,
+      "retrieval_mean_ms_misses": 4.6800121749129175,
+      "response_mean_ms_misses": 22.159933924876896,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 218.69603062518763,
+      "elapsed_ms": 1092.0163869996031,
+      "timestamp_utc": "2026-10-18T05:39:04.046841+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20568,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 404,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362656,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15361396,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 5
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 33.21695829986311,
+        "elapsed_ms": 1083.8594659999217,
+        "throughput_req_s": 36.90515353214887
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 271.15808600010496,
+      "latency_median_ms": 296.3961069999641,
+      "latency_p95_ms": 349.13377399980163,
+      "retrieval_mean_ms_misses": 4.796978150034192,
+      "response_mean_ms_misses": 21.98559252524319,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 217.8804189499715,
+      "elapsed_ms": 1089.042072000666,
+      "timestamp_utc": "2026-10-18T05:39:05.343799+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 20384,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 406,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362620,
+          "Cached": 188076,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15363156,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 5
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 36.591615625093254,
+        "elapsed_ms": 1086.3963779993355,
+        "throughput_req_s": 36.81897400437068
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 274.8204329501277,
+      "latency_median_ms": 297.67748650010617,
+      "latency_p95_ms": 355.8215395990373,
+      "retrieval_mean_ms_misses": 4.790399425110081,
+      "response_mean_ms_misses": 22.045341799957896,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 221.4383013250881,
+      "elapsed_ms": 1091.2778220008477,
+      "timestamp_utc": "2026-10-18T05:39:06.631691+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20560,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 407,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362336,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15360824,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 5
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 4,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 4,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 35.104844750003394,
+        "elapsed_ms": 1080.0472560003982,
+        "throughput_req_s": 37.0354165317978
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 311.34337010021227,
+      "latency_median_ms": 296.5244270008043,
+      "latency_p95_ms": 464.28199084921266,
+      "retrieval_mean_ms_misses": 4.76275312494181,
+      "response_mean_ms_misses": 21.952213749864313,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 207.8921016500317,
+      "elapsed_ms": 1085.1943779998692,
+      "timestamp_utc": "2026-10-18T05:39:07.916788+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20444,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 453472,
+        "threads_end": 1,
+        "minor_faults_delta": 431,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15363144,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15361380,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 6
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 4,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 4,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 35.08391432519602,
+        "elapsed_ms": 1082.680451001579,
+        "throughput_req_s": 36.94534242582502
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 311.6042818251117,
+      "latency_median_ms": 306.63664149960823,
+      "latency_p95_ms": 537.8247473003285,
+      "retrieval_mean_ms_misses": 4.7688700249636895,
+      "response_mean_ms_misses": 21.982686975161414,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 208.01368685019952,
+      "elapsed_ms": 1087.908071000129,
+      "timestamp_utc": "2026-10-18T05:39:09.207233+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20444,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 453472,
+        "threads_end": 1,
+        "minor_faults_delta": 431,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15361100,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15360848,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 6
+    },
+    {
+      "case": "C3",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 4,
+      "cache_capacity": 1,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 4,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 34.95593917500628,
+        "elapsed_ms": 1081.6323170001851,
+        "throughput_req_s": 36.981143565436895
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 39,
+        "size": 1,
+        "capacity": 1,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 311.29249952487044,
+      "latency_median_ms": 371.52941999920586,
+      "latency_p95_ms": 456.71461489946523,
+      "retrieval_mean_ms_misses": 4.671908424961657,
+      "response_mean_ms_misses": 22.035733225084186,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 207.82271049984047,
+      "elapsed_ms": 1087.2621409998828,
+      "timestamp_utc": "2026-10-18T05:39:10.499063+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20440,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 453472,
+        "threads_end": 1,
+        "minor_faults_delta": 429,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362652,
+          "Cached": 188092,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15362348,
+          "Cached": 188104,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 6
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 2,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 30.518012875154454,
+        "elapsed_ms": 982.9949020004278,
+        "throughput_req_s": 40.69197095386624
+      },
+      "cache": {
+        "hits": 4,
+        "misses": 36,
+        "evictions": 34,
+        "size": 2,
+        "capacity": 2,
+        "estimated_saved_ms": 107.995
+      },
+      "hit_rate": 0.1,
+      "latency_mean_ms": 248.06251132504258,
+      "latency_median_ms": 270.2658350008278,
+      "latency_p95_ms": 322.17278454845655,
+      "retrieval_mean_ms_misses": 4.810914805501751,
+      "response_mean_ms_misses": 22.147165083222514,
+      "context_bytes_mean": 1031.6,
+      "queue_wait_mean_ms": 199.80788452503475,
+      "elapsed_ms": 988.5400870007288,
+      "timestamp_utc": "2026-10-18T05:39:11.687007+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 20488,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 406,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362812,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15361048,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 7
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 2,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 31.645355000000563,
+        "elapsed_ms": 998.0055220003123,
+        "throughput_req_s": 40.07993855567813
+      },
+      "cache": {
+        "hits": 3,
+        "misses": 37,
+        "evictions": 35,
+        "size": 2,
+        "capacity": 2,
+        "estimated_saved_ms": 80.215
+      },
+      "hit_rate": 0.075,
+      "latency_mean_ms": 256.5567025000746,
+      "latency_median_ms": 290.8082004996686,
+      "latency_p95_ms": 328.48088719883884,
+      "retrieval_mean_ms_misses": 4.671753621378967,
+      "response_mean_ms_misses": 21.99102754054144,
+      "context_bytes_mean": 1031.6,
+      "queue_wait_mean_ms": 207.56428432505345,
+      "elapsed_ms": 1003.2197589989664,
+      "timestamp_utc": "2026-10-18T05:39:12.896029+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 20496,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 406,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362772,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15361260,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 7
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 2,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 36.10273379986211,
+        "elapsed_ms": 1028.5404530004598,
+        "throughput_req_s": 38.890060068431865
+      },
+      "cache": {
+        "hits": 2,
+        "misses": 38,
+        "evictions": 36,
+        "size": 2,
+        "capacity": 2,
+        "estimated_saved_ms": 54.404
+      },
+      "hit_rate": 0.05,
+      "latency_mean_ms": 264.24122977496154,
+      "latency_median_ms": 295.8593640005347,
+      "latency_p95_ms": 350.31840590017964,
+      "retrieval_mean_ms_misses": 4.6596658947141565,
+      "response_mean_ms_misses": 22.07688599982679,
+      "context_bytes_mean": 1031.6,
+      "queue_wait_mean_ms": 213.72101147494504,
+      "elapsed_ms": 1033.555420999619,
+      "timestamp_utc": "2026-10-18T05:39:14.122957+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20572,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 405,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15363556,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15362296,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 7
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 6.553724750074252,
+        "elapsed_ms": 135.55667500077107,
+        "throughput_req_s": 295.07953038662595
+      },
+      "cache": {
+        "hits": 35,
+        "misses": 5,
+        "evictions": 0,
+        "size": 5,
+        "capacity": 8,
+        "estimated_saved_ms": 906.262
+      },
+      "hit_rate": 0.875,
+      "latency_mean_ms": 39.32783207487773,
+      "latency_median_ms": 1.6253720004897332,
+      "latency_p95_ms": 130.85722414916745,
+      "retrieval_mean_ms_misses": 4.247481399943354,
+      "response_mean_ms_misses": 21.59059080076986,
+      "context_bytes_mean": 1031.6,
+      "queue_wait_mean_ms": 32.73378197513921,
+      "elapsed_ms": 140.0104599997576,
+      "timestamp_utc": "2026-10-18T05:39:14.458325+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20432,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 382,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364008,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15362496,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 8
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 6.856418175129875,
+        "elapsed_ms": 139.37768499999947,
+        "throughput_req_s": 286.98998695522994
+      },
+      "cache": {
+        "hits": 35,
+        "misses": 5,
+        "evictions": 0,
+        "size": 5,
+        "capacity": 8,
+        "estimated_saved_ms": 924.705
+      },
+      "hit_rate": 0.875,
+      "latency_mean_ms": 40.66389762501785,
+      "latency_median_ms": 2.0735444986712537,
+      "latency_p95_ms": 133.8477281004998,
+      "retrieval_mean_ms_misses": 4.652560000613448,
+      "response_mean_ms_misses": 21.709375199861825,
+      "context_bytes_mean": 1031.6,
+      "queue_wait_mean_ms": 33.903471600024204,
+      "elapsed_ms": 144.18396499968367,
+      "timestamp_utc": "2026-10-18T05:39:14.807500+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 20348,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 381,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364696,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15363184,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 8
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 6.701161224827956,
+        "elapsed_ms": 138.46553799885442,
+        "throughput_req_s": 288.88054441626434
+      },
+      "cache": {
+        "hits": 35,
+        "misses": 5,
+        "evictions": 0,
+        "size": 5,
+        "capacity": 8,
+        "estimated_saved_ms": 921.033
+      },
+      "hit_rate": 0.875,
+      "latency_mean_ms": 40.27385509998567,
+      "latency_median_ms": 2.1286780001901207,
+      "latency_p95_ms": 133.07128424958137,
+      "retrieval_mean_ms_misses": 4.47495219996199,
+      "response_mean_ms_misses": 21.77769640002225,
+      "context_bytes_mean": 1031.6,
+      "queue_wait_mean_ms": 33.57122977495237,
+      "elapsed_ms": 143.69323299979442,
+      "timestamp_utc": "2026-10-18T05:39:15.158867+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20440,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 381,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364132,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15362628,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 8
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 33.019652725215565,
+        "elapsed_ms": 1080.1427080004942,
+        "throughput_req_s": 37.0321437192739
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 32,
+        "size": 8,
+        "capacity": 8,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 269.96321047517995,
+      "latency_median_ms": 319.3485375004457,
+      "latency_p95_ms": 328.8340661997608,
+      "retrieval_mean_ms_misses": 4.70410519988036,
+      "response_mean_ms_misses": 21.999008100146966,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 216.89589760007948,
+      "elapsed_ms": 1084.867984000084,
+      "timestamp_utc": "2026-10-18T05:39:16.425099+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20528,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 407,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364336,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15362824,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 9
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 33.164176549962576,
+        "elapsed_ms": 1076.2564380002004,
+        "throughput_req_s": 37.16586362477355
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 32,
+        "size": 8,
+        "capacity": 8,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 269.8974382750748,
+      "latency_median_ms": 294.40161650018126,
+      "latency_p95_ms": 350.7560533005743,
+      "retrieval_mean_ms_misses": 4.627206000213846,
+      "response_mean_ms_misses": 21.942849450169888,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 216.9934533999367,
+      "elapsed_ms": 1081.28627699989,
+      "timestamp_utc": "2026-10-18T05:39:17.713722+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20532,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 408,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362356,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15361096,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 9
+    },
+    {
+      "case": "C4",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 40,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "pipeline": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 8,
+        "submitted": 40,
+        "completed": 40,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 8,
+        "mean_producer_block_ms": 35.00353255021764,
+        "elapsed_ms": 1059.169178999582,
+        "throughput_req_s": 37.7654493664376
+      },
+      "cache": {
+        "hits": 0,
+        "misses": 40,
+        "evictions": 32,
+        "size": 8,
+        "capacity": 8,
+        "estimated_saved_ms": 0
+      },
+      "hit_rate": 0.0,
+      "latency_mean_ms": 266.4133026001309,
+      "latency_median_ms": 284.95803699934186,
+      "latency_p95_ms": 370.9756021497014,
+      "retrieval_mean_ms_misses": 4.363038325072921,
+      "response_mean_ms_misses": 21.90133062476889,
+      "context_bytes_mean": 891.825,
+      "queue_wait_mean_ms": 214.36224337503518,
+      "elapsed_ms": 1063.7595190000866,
+      "timestamp_utc": "2026-10-18T05:39:18.963986+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20568,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 322400,
+        "threads_end": 1,
+        "minor_faults_delta": 408,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 274619,
+          "wchar": 0,
+          "syscr": 8,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15361984,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15360472,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 9
+    },
+    {
+      "case": "C5",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "read_ms_first": 0.2185119992645923,
+      "read_ms_second": 0.23227500059874728,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "read_all",
+      "records_loaded": 480,
+      "retained_bytes": 271569,
+      "elapsed_ms": 4.3764080000983085,
+      "timestamp_utc": "2026-10-18T05:39:19.156182+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20572,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 27740,
+        "threads_end": 1,
+        "minor_faults_delta": 395,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 546188,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15360660,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15359148,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 10
+    },
+    {
+      "case": "C5",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "read_ms_first": 0.21565799943346065,
+      "read_ms_second": 0.25585000003047753,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "read_all",
+      "records_loaded": 480,
+      "retained_bytes": 271569,
+      "elapsed_ms": 4.501294000874623,
+      "timestamp_utc": "2026-10-18T05:39:19.345374+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20524,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 27740,
+        "threads_end": 1,
+        "minor_faults_delta": 396,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 546188,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364332,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15363324,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 10
+    },
+    {
+      "case": "C5",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "read_ms_first": 0.21757899958174676,
+      "read_ms_second": 0.2381249996687984,
+      "bytes_read_logical": 543138,
+      "index_bytes": 271569,
+      "reader": "read_all",
+      "records_loaded": 480,
+      "retained_bytes": 271569,
+      "elapsed_ms": 4.258511999069015,
+      "timestamp_utc": "2026-10-18T05:39:19.531612+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 20524,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 27740,
+        "threads_end": 1,
+        "minor_faults_delta": 396,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 546188,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364768,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15363256,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 10
+    },
+    {
+      "case": "C5",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "read_ms_first": 1.894897999591194,
+      "read_ms_second": 2.1635869998135604,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "read_all",
+      "records_loaded": 4800,
+      "retained_bytes": 2716544,
+      "elapsed_ms": 56.352350000452134,
+      "timestamp_utc": "2026-10-18T05:39:19.765928+00:00",
+      "process": {
+        "rss_kib_start": 19328,
+        "rss_kib_end": 32684,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 39560,
+        "threads_end": 1,
+        "minor_faults_delta": 3986,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 5436138,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15365164,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15351808,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 11
+    },
+    {
+      "case": "C5",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "read_ms_first": 1.9245069997850806,
+      "read_ms_second": 2.0657050008594524,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "read_all",
+      "records_loaded": 4800,
+      "retained_bytes": 2716544,
+      "elapsed_ms": 45.31002000112494,
+      "timestamp_utc": "2026-10-18T05:39:19.992070+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 32512,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 39560,
+        "threads_end": 1,
+        "minor_faults_delta": 3987,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 5436138,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364648,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15351040,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 11
+    },
+    {
+      "case": "C5",
+      "mode": "standard",
+      "documents": 1200,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "read_ms_first": 1.8288169994775672,
+      "read_ms_second": 2.149280999219627,
+      "bytes_read_logical": 5433088,
+      "index_bytes": 2716544,
+      "reader": "read_all",
+      "records_loaded": 4800,
+      "retained_bytes": 2716544,
+      "elapsed_ms": 42.76981099974364,
+      "timestamp_utc": "2026-10-18T05:39:20.222395+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 32432,
+        "vsz_kib_start": 26316,
+        "vsz_kib_end": 39560,
+        "threads_end": 1,
+        "minor_faults_delta": 3986,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 5436138,
+          "wchar": 0,
+          "syscr": 10,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15364432,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15351076,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 11
+    },
+    {
+      "case": "C6",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 1,
+      "missing_index_handled": true,
+      "exception": "FileNotFoundError",
+      "saturation": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 1,
+        "submitted": 12,
+        "completed": 12,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 1,
+        "mean_producer_block_ms": 6.370437499905772,
+        "elapsed_ms": 52.82206300034886,
+        "throughput_req_s": 227.1777987906445
+      },
+      "elapsed_ms": 53.46537900004478,
+      "timestamp_utc": "2026-10-18T05:39:20.468152+00:00",
+      "process": {
+        "rss_kib_start": 19328,
+        "rss_kib_end": 19456,
+        "vsz_kib_start": 26312,
+        "vsz_kib_end": 321240,
+        "threads_end": 1,
+        "minor_faults_delta": 25,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15362828,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15364856,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 12
+    },
+    {
+      "case": "C6",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 2,
+      "missing_index_handled": true,
+      "exception": "FileNotFoundError",
+      "saturation": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 1,
+        "submitted": 12,
+        "completed": 12,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 1,
+        "mean_producer_block_ms": 6.407199166763651,
+        "elapsed_ms": 53.38636899978155,
+        "throughput_req_s": 224.77647805658222
+      },
+      "elapsed_ms": 53.959197999574826,
+      "timestamp_utc": "2026-10-18T05:39:20.719878+00:00",
+      "process": {
+        "rss_kib_start": 19072,
+        "rss_kib_end": 19200,
+        "vsz_kib_start": 26312,
+        "vsz_kib_end": 321240,
+        "threads_end": 1,
+        "minor_faults_delta": 25,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15365084,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15365092,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 12
+    },
+    {
+      "case": "C6",
+      "mode": "standard",
+      "documents": 120,
+      "consumers": 2,
+      "cache_capacity": 8,
+      "unique_queries": 5,
+      "context_bytes": 2048,
+      "queue_capacity": 8,
+      "repeat": 3,
+      "missing_index_handled": true,
+      "exception": "FileNotFoundError",
+      "saturation": {
+        "producers": 2,
+        "consumers": 2,
+        "queue_capacity": 1,
+        "submitted": 12,
+        "completed": 12,
+        "lost": 0,
+        "duplicate_ids": 0,
+        "errors": [],
+        "max_queue_observed": 1,
+        "mean_producer_block_ms": 6.508573917017202,
+        "elapsed_ms": 54.951340998741216,
+        "throughput_req_s": 218.3750165491846
+      },
+      "elapsed_ms": 55.44322100104182,
+      "timestamp_utc": "2026-10-18T05:39:20.962832+00:00",
+      "process": {
+        "rss_kib_start": 19200,
+        "rss_kib_end": 19328,
+        "vsz_kib_start": 26312,
+        "vsz_kib_end": 321240,
+        "threads_end": 1,
+        "minor_faults_delta": 25,
+        "major_faults_delta": 0,
+        "io_delta": {
+          "rchar": 3050,
+          "wchar": 0,
+          "syscr": 6,
+          "syscw": 0,
+          "read_bytes": 0,
+          "write_bytes": 0
+        },
+        "meminfo_start_kib": {
+          "MemAvailable": 15365020,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        },
+        "meminfo_end_kib": {
+          "MemAvailable": 15364768,
+          "Cached": 188108,
+          "SwapTotal": 4194304,
+          "SwapFree": 4194304
+        }
+      },
+      "config_id": 12
+    }
+  ],
+  "failures": []
+}

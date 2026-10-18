@@ -12,3 +12,4 @@ logs/*
 data/generated/*
 !data/generated/.gitkeep
 notes.md
+/docs/roteiro_apresentacao.md

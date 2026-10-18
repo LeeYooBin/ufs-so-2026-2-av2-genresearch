@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="189" viewBox="0 0 850 189">
+<rect width="100%" height="100%" fill="white"/>
+<text x="16" y="26" font-size="18" font-family="sans-serif">Taxa de acerto do cache</text>
+<text x="16" y="46" font-size="12" fill="#555" font-family="sans-serif">Hits (%)</text>
+<text x="16" y="84" font-size="13" font-family="sans-serif">C4 cache=2 consultas=5</text>
+<rect x="290" y="67" width="41" height="22" fill="#2563a5"/>
+<text x="341" y="83" font-size="12" font-family="sans-serif">7.50</text>
+<text x="16" y="122" font-size="13" font-family="sans-serif">C4 cache=8 consultas=5</text>
+<rect x="290" y="105" width="480" height="22" fill="#2563a5"/>
+<text x="780" y="121" font-size="12" font-family="sans-serif">87.50</text>
+<text x="16" y="160" font-size="13" font-family="sans-serif">C4 cache=8 consultas=40</text>
+<rect x="290" y="143" width="0" height="22" fill="#2563a5"/>
+<text x="300" y="159" font-size="12" font-family="sans-serif">0.00</text>
+</svg>

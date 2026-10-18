@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-10-18T21:41:34.683907+00:00",
+  "note": "Coleta complementar; NAO integra as 39 execucoes definitivas.",
+  "parameters": {
+    "documents": 120,
+    "requests": 40,
+    "unique_queries": 5,
+    "consumers": 4,
+    "producers": 2,
+    "queue_capacity": 2,
+    "cache_capacity": 8,
+    "response_ms": 20.0
+  },
+  "ingestion": {
+    "documents": 120,
+    "chunks": 480,
+    "corpus_bytes": 119446,
+    "index_bytes": 271569,
+    "corpus_generation_ms": 6.129367000539787,
+    "ingestion_ms": 19.879130006302148
+  },
+  "io_delta": {
+    "write_bytes": 401408,
+    "rchar": 391113,
+    "wchar": 414554,
+    "syscw": 181,
+    "read_bytes": 0,
+    "syscr": 20,
+    "cancelled_write_bytes": 401408
+  },
+  "io_ops_per_second": {
+    "read_syscalls_per_s": 123.6416420100904,
+    "write_syscalls_per_s": 1118.9568601913181
+  },
+  "io_rate_note": "Taxas aproximadas: denominador e tempo do pipeline, enquanto contadores incluem ingestao; nao usar como benchmark de E/S.",
+  "pipeline": {
+    "producers": 2,
+    "consumers": 4,
+    "queue_capacity": 2,
+    "submitted": 40,
+    "completed": 40,
+    "lost": 0,
+    "duplicate_ids": 0,
+    "errors": [],
+    "max_queue_observed": 2,
+    "mean_queue_observed_at_put": 1.925,
+    "worker_processing_fraction": {
+      "consumer-0": 0.984721,
+      "consumer-1": 0.974458,
+      "consumer-2": 0.979223,
+      "consumer-3": 0.964159
+    },
+    "mean_producer_block_ms": 7.664395426763804,
+    "elapsed_ms": 161.7578000004869,
+    "throughput_req_s": 247.2832840201808
+  },
+  "cache": {
+    "hits": 35,
+    "misses": 5,
+    "evictions": 0,
+    "size": 5,
+    "capacity": 8,
+    "estimated_saved_ms": 883.332
+  },
+  "event_log": "/mnt/c/Users/junio/Desktop/Repos/SO/ufs-so-2026-2-av2-genresearch/logs/etapa6_5_events.jsonl"
+}

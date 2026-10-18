@@ -1,0 +1,34 @@
+Timestamp UTC: 2026-10-18T06:08:07Z
+PWD: /home/roberdan/so-av2-benchmark
+=== uname -a ===
+Linux ssk 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+=== /etc/os-release ===
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.3 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+=== Python ===
+Python 3.12.3
+=== Git commit ===
+c9cec8b112341aa847a84d5b388b9623b1dc5ac3
+=== df -T . ===
+Filesystem     Type  1K-blocks     Used Available Use% Mounted on
+/dev/sdd       ext4 1055762868 22512988 979546408   3% /
+=== free -h ===
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       626Mi        14Gi       3.6Mi       282Mi        14Gi
+Swap:          4.0Gi          0B       4.0Gi
+=== nproc ===
+16
+=== swap ===
+Filename				Type		Size		Used		Priority
+/dev/sdc                                partition	4194304		0		-2

@@ -1,0 +1,24 @@
+{
+  "producers": 2,
+  "consumers": 4,
+  "queue_capacity": 2,
+  "submitted": 80,
+  "completed": 80,
+  "lost": 0,
+  "duplicate_ids": 0,
+  "errors": [],
+  "max_queue_observed": 2,
+  "mean_producer_block_ms": 142.08278120013347,
+  "elapsed_ms": 6455.580522000673,
+  "throughput_req_s": 12.392378923531249,
+  "cache": {
+    "hits": 0,
+    "misses": 80,
+    "evictions": 79,
+    "size": 1,
+    "capacity": 1,
+    "estimated_saved_ms": 0
+  },
+  "index_records": 480
+}
+Detalhes: /home/roberdan/so-av2-benchmark/results/raw/os_evidence_service.json
