@@ -1,0 +1,144 @@
+Data UTC: 2026-10-18T03:26:45Z
+Commit: ainda-sem-commit
+=== Python ===
+Python 3.12.3
+=== Kernel ===
+Linux ssk 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+=== Distro ===
+PRETTY_NAME="Ubuntu 24.04.3 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.3 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+=== CPU ===
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        48 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               16
+On-line CPU(s) list:                  0-15
+Vendor ID:                            AuthenticAMD
+Model name:                           AMD Ryzen 7 7735HS with Radeon Graphics
+CPU family:                           25
+Model:                                68
+Thread(s) per core:                   2
+Core(s) per socket:                   8
+Socket(s):                            1
+Stepping:                             1
+BogoMIPS:                             6387.83
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero xsaveerptr arat umip vaes vpclmulqdq rdpid fsrm
+Hypervisor vendor:                    Microsoft
+Virtualization type:                  full
+L1d cache:                            256 KiB (8 instances)
+L1i cache:                            256 KiB (8 instances)
+L2 cache:                             4 MiB (8 instances)
+L3 cache:                             16 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-15
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Vulnerable: Safe RET, no microcode
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+=== Memória ===
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       607Mi        13Gi       3.6Mi       1.3Gi        14Gi
+Swap:          4.0Gi          0B       4.0Gi
+=== Swap ===
+NAME     TYPE      SIZE USED PRIO
+/dev/sdc partition   4G   0B   -2
+=== Meminfo ===
+MemTotal:       16017592 kB
+MemFree:        14280804 kB
+MemAvailable:   15395332 kB
+Buffers:           53436 kB
+Cached:          1232480 kB
+SwapCached:            0 kB
+Active:           465508 kB
+Inactive:         925960 kB
+Active(anon):       2944 kB
+Inactive(anon):   106260 kB
+Active(file):     462564 kB
+Inactive(file):   819700 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       4194304 kB
+SwapFree:        4194304 kB
+Dirty:               112 kB
+Writeback:             0 kB
+AnonPages:        105248 kB
+Mapped:           148384 kB
+Shmem:              3640 kB
+KReclaimable:      34872 kB
+Slab:             100176 kB
+SReclaimable:      34872 kB
+SUnreclaim:        65304 kB
+KernelStack:        4852 kB
+PageTables:         3304 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12203100 kB
+Committed_AS:     791364 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       29320 kB
+VmallocChunk:          0 kB
+Percpu:             6912 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:       74752 kB
+DirectMap2M:     6901760 kB
+DirectMap1G:    17825792 kB
+=== Discos ===
+NAME MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda    8:0    0 388.6M  1 disk 
+sdb    8:16   0   186M  1 disk 
+sdc    8:32   0     4G  0 disk [SWAP]
+sdd    8:48   0     1T  0 disk /mnt/wslg/distro
+                               /
+=== Filesystems ===
+Filesystem      Size  Used Avail Use% Mounted on
+none            7.7G     0  7.7G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none            7.7G  4.0K  7.7G   1% /mnt/wsl
+drivers         953G  289G  665G  31% /usr/lib/wsl/drivers
+/dev/sdd       1007G   22G  935G   3% /
+none            7.7G   76K  7.7G   1% /mnt/wslg
+none            7.7G     0  7.7G   0% /usr/lib/wsl/lib
+rootfs          7.7G  2.7M  7.7G   1% /init
+none            7.7G  552K  7.7G   1% /run
+none            7.7G     0  7.7G   0% /run/lock
+none            7.7G     0  7.7G   0% /run/shm
+none            7.7G  100K  7.7G   1% /mnt/wslg/versions.txt
+none            7.7G  100K  7.7G   1% /mnt/wslg/doc
+C:\             953G  289G  665G  31% /mnt/c
+D:\             477G  245G  233G  52% /mnt/d
+tmpfs           1.6G   20K  1.6G   1% /run/user/1000
