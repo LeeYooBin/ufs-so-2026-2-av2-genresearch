@@ -23,12 +23,33 @@ p.add_argument('--top-k', type=int, default=3)
 p.add_argument('--context-bytes', type=int, default=2048)
 p.add_argument('--output', default='results/raw/service.json')
 a = p.parse_args()
+
 if a.requests < 0 or a.unique_queries < 1:
     p.error('requests >= 0 e unique-queries >= 1')
+
 retriever = Retriever(ROOT / a.index, a.read_mode)
 service = GenResearchService(retriever, a.cache_capacity, a.response_ms, a.top_k, a.context_bytes)
-terms = ['memoria swap', 'armazenamento mmap', 'threads mutex', 'rag contexto', 'fila consumidores', 'cache', 'pagina']
-queries = [terms[i % len(terms)] + f' consulta{i % a.unique_queries}' for i in range(a.requests)]
+
+terms = [
+    'memoria swap',
+    'armazenamento mmap',
+    'threads mutex',
+    'rag contexto',
+    'fila consumidores',
+    'cache',
+    'pagina',
+]
+
+query_pool = [
+    f'{terms[i % len(terms)]} consulta{i}'
+    for i in range(a.unique_queries)
+]
+
+queries = [
+    query_pool[i % len(query_pool)]
+    for i in range(a.requests)
+]
+
 result = run_pipeline(queries, a.producers, a.consumers, a.queue_capacity, handler=service.query)
 result['cache'] = service.cache.stats()
 result['query_metrics'] = service.records
