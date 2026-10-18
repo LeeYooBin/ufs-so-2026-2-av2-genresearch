@@ -55,7 +55,12 @@ O pipeline recebe documentos sintéticos em JSONL, fragmenta textos em trechos c
 
 
 ## Etapa 5 — Sincronização e falha controlada
-_A preencher após implementação e testes._
+
+**O que falar (60–75 segundos):** o cache faz `check → compute → store`, uma sequência não atômica. Em uma versão propositalmente insegura, várias threads observam simultaneamente um miss para a mesma chave e calculam a resposta repetidamente (*cache stampede*). O lock global da etapa 4 evita duplicação, mas também serializa chaves distintas. A terceira versão aplica um lock por chave com dupla verificação (*double-check*): a mesma chave só é calculada uma vez, e chaves diferentes podem avançar em paralelo.
+
+**O que mostrar:** `src/genresearch/cache/race_demo.py`, especialmente o atraso controlado após o miss e o `double-check`; executar `python scripts/run_race_demo.py --workers 8 --compute-ms 40 --repetitions 3`; mostrar `results/raw/race_demo.json` com `compute_calls_per_run`, hits e tempo médio dos cenários `same` e `distinct`.
+
+**Evidências:** três repetições por configuração; testes demonstrando cálculos duplicados no modo inseguro e um único cálculo nos modos protegidos; gráfico do tempo médio por modo. Não afirmar que `sleep` representa paralelismo de CPU ou inferência real. Os números e conclusões quantitativas só entram após rodar no WSL.
 
 ## Etapa 6 — Experimentos C1–C6 e métricas
 _A preencher com números reais, tabelas e gráficos._

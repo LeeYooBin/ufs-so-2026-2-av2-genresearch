@@ -1,0 +1,403 @@
+{
+  "configuration": {
+    "workers": 8,
+    "compute_ms": 40.0,
+    "miss_delay_ms": 10.0,
+    "repetitions": 3,
+    "output": "results/raw/race_demo.json"
+  },
+  "summary": [
+    {
+      "workload": "same",
+      "mode": "unsafe",
+      "mean_elapsed_ms": 58.051,
+      "median_elapsed_ms": 58.277,
+      "compute_calls_per_run": [
+        8,
+        8,
+        8
+      ],
+      "hits_per_run": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "workload": "same",
+      "mode": "global",
+      "mean_elapsed_ms": 47.725,
+      "median_elapsed_ms": 47.447,
+      "compute_calls_per_run": [
+        1,
+        1,
+        1
+      ],
+      "hits_per_run": [
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "workload": "same",
+      "mode": "keyed",
+      "mean_elapsed_ms": 47.098,
+      "median_elapsed_ms": 47.169,
+      "compute_calls_per_run": [
+        1,
+        1,
+        1
+      ],
+      "hits_per_run": [
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "workload": "distinct",
+      "mode": "unsafe",
+      "mean_elapsed_ms": 58.303,
+      "median_elapsed_ms": 58.345,
+      "compute_calls_per_run": [
+        8,
+        8,
+        8
+      ],
+      "hits_per_run": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "workload": "distinct",
+      "mode": "global",
+      "mean_elapsed_ms": 358.778,
+      "median_elapsed_ms": 359.24,
+      "compute_calls_per_run": [
+        8,
+        8,
+        8
+      ],
+      "hits_per_run": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "workload": "distinct",
+      "mode": "keyed",
+      "mean_elapsed_ms": 47.163,
+      "median_elapsed_ms": 47.758,
+      "compute_calls_per_run": [
+        8,
+        8,
+        8
+      ],
+      "hits_per_run": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "mode": "unsafe",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 59.429,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "unsafe",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 56.446,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "unsafe",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 58.277,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "global",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 48.69,
+      "compute_calls": 1,
+      "hits_observed": 7,
+      "cache": {
+        "hits": 7,
+        "misses": 1,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8,
+        "estimated_saved_ms": 303.216
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "global",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 47.037,
+      "compute_calls": 1,
+      "hits_observed": 7,
+      "cache": {
+        "hits": 7,
+        "misses": 1,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8,
+        "estimated_saved_ms": 300.445
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "global",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 47.447,
+      "compute_calls": 1,
+      "hits_observed": 7,
+      "cache": {
+        "hits": 7,
+        "misses": 1,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8,
+        "estimated_saved_ms": 297.684
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "keyed",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 46.74,
+      "compute_calls": 1,
+      "hits_observed": 7,
+      "cache": {
+        "hits": 7,
+        "misses": 1,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "keyed",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 47.169,
+      "compute_calls": 1,
+      "hits_observed": 7,
+      "cache": {
+        "hits": 7,
+        "misses": 1,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "keyed",
+      "workload": "same",
+      "workers": 8,
+      "elapsed_ms": 47.384,
+      "compute_calls": 1,
+      "hits_observed": 7,
+      "cache": {
+        "hits": 7,
+        "misses": 1,
+        "evictions": 0,
+        "size": 1,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "unsafe",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 57.871,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "unsafe",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 58.692,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "unsafe",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 58.345,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "global",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 355.566,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8,
+        "estimated_saved_ms": 0
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "global",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 359.24,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8,
+        "estimated_saved_ms": 0
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "global",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 361.527,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8,
+        "estimated_saved_ms": 0
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "keyed",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 48.358,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "keyed",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 45.372,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    },
+    {
+      "mode": "keyed",
+      "workload": "distinct",
+      "workers": 8,
+      "elapsed_ms": 47.758,
+      "compute_calls": 8,
+      "hits_observed": 0,
+      "cache": {
+        "hits": 0,
+        "misses": 8,
+        "evictions": 0,
+        "size": 8,
+        "capacity": 8
+      },
+      "correct_answers": 8
+    }
+  ]
+}
