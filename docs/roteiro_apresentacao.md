@@ -36,8 +36,14 @@ O pipeline recebe documentos sintéticos em JSONL, fragmenta textos em trechos c
 **Limitação:** `mmap[:]` copia os dados para `bytes`; a comparação futura deverá explicitar essa escolha e, se necessário, comparar acesso incremental sem cópia. C1/C2 ainda não foram medidos.
 
 
-## Etapa 3 — Fila e trabalhadores
-_A preencher após implementação e testes._
+## Etapa 3 — Fila limitada e trabalhadores concorrentes
+
+**O que falar (40–50 segundos):** implementamos o padrão produtores-consumidores com `queue.Queue(maxsize=N)`, dois produtores e dois consumidores por padrão. A fila usa sincronização interna e bloqueia produtores quando está cheia. Cada requisição tem ID único; medimos espera na fila, processamento, latência total, vazão e duplicações/perdas. `task_done()` e sentinelas garantem encerramento coordenado após os produtores terminarem.
+
+**O que mostrar:** `src/genresearch/concurrency/workers.py`, saída de `python scripts/run_concurrency.py --requests 40 --producers 2 --consumers 2 --queue-capacity 4` e `results/raw/concurrency.json`. Comparar depois 1, 2 e 4 consumidores, sem afirmar aceleração antes das medições.
+
+**Limitações:** o custo inicial é simulado com `sleep`, representando espera/I/O, não carga intensiva de CPU; não há ainda recuperação real nem cache. O pico de fila é amostrado, não uma série temporal completa. Falha controlada de sincronização será demonstrada na etapa do cache.
+
 
 ## Etapa 4 — Recuperação, processamento e cache
 _A preencher após implementação e testes._
@@ -61,3 +67,4 @@ _A preencher após análise._
 - [ ] Memória, armazenamento e E/S
 - [ ] Relação com IA generativa e limitações
 - [ ] Ensaiar para 10–12 minutos, reservar 3–5 para perguntas
+

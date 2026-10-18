@@ -1,0 +1,336 @@
+{
+  "producers": 2,
+  "consumers": 4,
+  "queue_capacity": 8,
+  "submitted": 40,
+  "completed": 40,
+  "lost": 0,
+  "duplicate_ids": 0,
+  "errors": [],
+  "max_queue_observed": 8,
+  "mean_producer_block_ms": 7.249802174999331,
+  "elapsed_ms": 225.89462200039634,
+  "throughput_req_s": 177.07371537127528,
+  "results": [
+    {
+      "request_id": 0,
+      "worker": "consumer-1",
+      "queue_wait_ms": 0.6108909997237788,
+      "processing_ms": 20.77676800035988,
+      "total_ms": 21.38765900008366,
+      "status": "ok"
+    },
+    {
+      "request_id": 1,
+      "worker": "consumer-1",
+      "queue_wait_ms": 43.14088499995705,
+      "processing_ms": 22.180835000199295,
+      "total_ms": 65.32172000015635,
+      "status": "ok"
+    },
+    {
+      "request_id": 2,
+      "worker": "consumer-2",
+      "queue_wait_ms": 0.6188040001688933,
+      "processing_ms": 21.22155200004272,
+      "total_ms": 21.840356000211614,
+      "status": "ok"
+    },
+    {
+      "request_id": 3,
+      "worker": "consumer-0",
+      "queue_wait_ms": 42.996047000087856,
+      "processing_ms": 22.356839000167383,
+      "total_ms": 65.35288600025524,
+      "status": "ok"
+    },
+    {
+      "request_id": 4,
+      "worker": "consumer-3",
+      "queue_wait_ms": 0.6101750000198081,
+      "processing_ms": 21.06149400015056,
+      "total_ms": 21.67166900017037,
+      "status": "ok"
+    },
+    {
+      "request_id": 5,
+      "worker": "consumer-3",
+      "queue_wait_ms": 43.214835999606294,
+      "processing_ms": 22.37414199998966,
+      "total_ms": 65.58897799959595,
+      "status": "ok"
+    },
+    {
+      "request_id": 6,
+      "worker": "consumer-0",
+      "queue_wait_ms": 0.5743900001107249,
+      "processing_ms": 20.799217999865505,
+      "total_ms": 21.37360799997623,
+      "status": "ok"
+    },
+    {
+      "request_id": 7,
+      "worker": "consumer-2",
+      "queue_wait_ms": 43.34824399984427,
+      "processing_ms": 22.45085900040067,
+      "total_ms": 65.79910300024494,
+      "status": "ok"
+    },
+    {
+      "request_id": 8,
+      "worker": "consumer-1",
+      "queue_wait_ms": 21.220769000137807,
+      "processing_ms": 22.178745000019262,
+      "total_ms": 43.39951400015707,
+      "status": "ok"
+    },
+    {
+      "request_id": 9,
+      "worker": "consumer-1",
+      "queue_wait_ms": 65.12377199987895,
+      "processing_ms": 22.479639000266616,
+      "total_ms": 87.60341100014557,
+      "status": "ok"
+    },
+    {
+      "request_id": 10,
+      "worker": "consumer-0",
+      "queue_wait_ms": 21.400234999873646,
+      "processing_ms": 22.130802999981825,
+      "total_ms": 43.53103799985547,
+      "status": "ok"
+    },
+    {
+      "request_id": 11,
+      "worker": "consumer-3",
+      "queue_wait_ms": 45.00898000014786,
+      "processing_ms": 22.488719999728346,
+      "total_ms": 67.4976999998762,
+      "status": "ok"
+    },
+    {
+      "request_id": 12,
+      "worker": "consumer-3",
+      "queue_wait_ms": 21.607087000120373,
+      "processing_ms": 22.13219199984451,
+      "total_ms": 43.73927899996488,
+      "status": "ok"
+    },
+    {
+      "request_id": 13,
+      "worker": "consumer-2",
+      "queue_wait_ms": 44.69752700015306,
+      "processing_ms": 22.154376999878878,
+      "total_ms": 66.85190400003194,
+      "status": "ok"
+    },
+    {
+      "request_id": 14,
+      "worker": "consumer-2",
+      "queue_wait_ms": 21.708920000037324,
+      "processing_ms": 22.184143999766093,
+      "total_ms": 43.89306399980342,
+      "status": "ok"
+    },
+    {
+      "request_id": 15,
+      "worker": "consumer-1",
+      "queue_wait_ms": 66.5183219998653,
+      "processing_ms": 22.179601000061666,
+      "total_ms": 88.69792299992696,
+      "status": "ok"
+    },
+    {
+      "request_id": 16,
+      "worker": "consumer-0",
+      "queue_wait_ms": 66.00785099999484,
+      "processing_ms": 22.39765800004534,
+      "total_ms": 88.40550900004018,
+      "status": "ok"
+    },
+    {
+      "request_id": 17,
+      "worker": "consumer-0",
+      "queue_wait_ms": 44.84311899977911,
+      "processing_ms": 22.217642000214255,
+      "total_ms": 67.06076099999336,
+      "status": "ok"
+    },
+    {
+      "request_id": 18,
+      "worker": "consumer-3",
+      "queue_wait_ms": 67.2860849999779,
+      "processing_ms": 22.206694000033167,
+      "total_ms": 89.49277900001107,
+      "status": "ok"
+    },
+    {
+      "request_id": 19,
+      "worker": "consumer-2",
+      "queue_wait_ms": 45.048898000004556,
+      "processing_ms": 22.117292000075395,
+      "total_ms": 67.16619000007995,
+      "status": "ok"
+    },
+    {
+      "request_id": 20,
+      "worker": "consumer-0",
+      "queue_wait_ms": 66.73245499996483,
+      "processing_ms": 22.887766000167176,
+      "total_ms": 89.620221000132,
+      "status": "ok"
+    },
+    {
+      "request_id": 21,
+      "worker": "consumer-1",
+      "queue_wait_ms": 66.71688400001585,
+      "processing_ms": 22.515642000144,
+      "total_ms": 89.23252600015985,
+      "status": "ok"
+    },
+    {
+      "request_id": 22,
+      "worker": "consumer-3",
+      "queue_wait_ms": 44.965185999899404,
+      "processing_ms": 22.315169000194146,
+      "total_ms": 67.28035500009355,
+      "status": "ok"
+    },
+    {
+      "request_id": 23,
+      "worker": "consumer-2",
+      "queue_wait_ms": 45.006910000211064,
+      "processing_ms": 23.042760999942402,
+      "total_ms": 68.04967100015347,
+      "status": "ok"
+    },
+    {
+      "request_id": 24,
+      "worker": "consumer-1",
+      "queue_wait_ms": 66.67391400014822,
+      "processing_ms": 22.327131000110967,
+      "total_ms": 89.00104500025918,
+      "status": "ok"
+    },
+    {
+      "request_id": 25,
+      "worker": "consumer-0",
+      "queue_wait_ms": 67.37778000024264,
+      "processing_ms": 22.256827000092017,
+      "total_ms": 89.63460700033465,
+      "status": "ok"
+    },
+    {
+      "request_id": 26,
+      "worker": "consumer-3",
+      "queue_wait_ms": 44.83872699984204,
+      "processing_ms": 22.415270000237797,
+      "total_ms": 67.25399700007983,
+      "status": "ok"
+    },
+    {
+      "request_id": 27,
+      "worker": "consumer-2",
+      "queue_wait_ms": 45.109600000159844,
+      "processing_ms": 22.205040999779158,
+      "total_ms": 67.314640999939,
+      "status": "ok"
+    },
+    {
+      "request_id": 28,
+      "worker": "consumer-3",
+      "queue_wait_ms": 67.31400499984375,
+      "processing_ms": 22.40523199998279,
+      "total_ms": 89.71923699982653,
+      "status": "ok"
+    },
+    {
+      "request_id": 29,
+      "worker": "consumer-1",
+      "queue_wait_ms": 66.78407000026709,
+      "processing_ms": 22.996282999883988,
+      "total_ms": 89.78035300015108,
+      "status": "ok"
+    },
+    {
+      "request_id": 30,
+      "worker": "consumer-2",
+      "queue_wait_ms": 45.42712300008134,
+      "processing_ms": 22.303458000351384,
+      "total_ms": 67.73058100043272,
+      "status": "ok"
+    },
+    {
+      "request_id": 31,
+      "worker": "consumer-0",
+      "queue_wait_ms": 45.42370699982712,
+      "processing_ms": 22.689774999889778,
+      "total_ms": 68.1134819997169,
+      "status": "ok"
+    },
+    {
+      "request_id": 32,
+      "worker": "consumer-3",
+      "queue_wait_ms": 67.3160410001401,
+      "processing_ms": 22.133995999865874,
+      "total_ms": 89.45003700000598,
+      "status": "ok"
+    },
+    {
+      "request_id": 33,
+      "worker": "consumer-3",
+      "queue_wait_ms": 89.65274300044257,
+      "processing_ms": 22.968781999679777,
+      "total_ms": 112.62152500012235,
+      "status": "ok"
+    },
+    {
+      "request_id": 34,
+      "worker": "consumer-2",
+      "queue_wait_ms": 45.01167699982034,
+      "processing_ms": 22.116506000202207,
+      "total_ms": 67.12818300002255,
+      "status": "ok"
+    },
+    {
+      "request_id": 35,
+      "worker": "consumer-2",
+      "queue_wait_ms": 44.95630900009928,
+      "processing_ms": 23.12779199974102,
+      "total_ms": 68.0841009998403,
+      "status": "ok"
+    },
+    {
+      "request_id": 36,
+      "worker": "consumer-1",
+      "queue_wait_ms": 45.094834999872546,
+      "processing_ms": 22.10694599989438,
+      "total_ms": 67.20178099976692,
+      "status": "ok"
+    },
+    {
+      "request_id": 37,
+      "worker": "consumer-1",
+      "queue_wait_ms": 44.814624000082404,
+      "processing_ms": 22.893849999945814,
+      "total_ms": 67.70847400002822,
+      "status": "ok"
+    },
+    {
+      "request_id": 38,
+      "worker": "consumer-0",
+      "queue_wait_ms": 44.976862000112305,
+      "processing_ms": 22.09600700007286,
+      "total_ms": 67.07286900018516,
+      "status": "ok"
+    },
+    {
+      "request_id": 39,
+      "worker": "consumer-0",
+      "queue_wait_ms": 44.75049900020167,
+      "processing_ms": 22.429592999742454,
+      "total_ms": 67.18009199994412,
+      "status": "ok"
+    }
+  ]
+}
