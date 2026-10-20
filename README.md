@@ -2,11 +2,11 @@
 
 **Sistemas Operacionais 2026.2 - AV2**
 
-**Discente:** Roberdan Tamyr dos Santos Feitosa Junior 
-**Relatório técnico:** [https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/relatorio.pdf](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/relatorio.pdf)  
-**Vídeo de demonstração:** link 
-**Guia do vídeo:** [https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/VIDEO.md](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/VIDEO.md)  
-**Declaração de uso de IA:** [https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/declaracao_de_uso_ia.pdf](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/declaracao_de_uso_ia.pdf)
+**Discente:** Roberdan Tamyr dos Santos Feitosa Junior
+[**Relatório técnico**](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/relatorio.pdf)  
+**Vídeo de demonstração**
+[**Guia do vídeo**](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/VIDEO.md)  
+[**Declaração de uso de IA**](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/declaracao_de_uso_ia.pdf)
 
 ## 1. Visão geral
 
