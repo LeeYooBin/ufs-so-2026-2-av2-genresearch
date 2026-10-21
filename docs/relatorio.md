@@ -12,7 +12,7 @@ Discente: Roberdan Tamyr dos Santos Feitosa Junior
 
 Repositório: https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch
 
-Vídeo: url
+Vídeo: https://drive.google.com/file/d/1Fo2lFxFHPE1GVW7_KCBlKOorEntI1IKo/view?usp=sharing
 
 </div>
 
@@ -183,6 +183,6 @@ Conclui-se que a construção de serviços inspirados em RAG exige avaliar não 
 - PYTHON SOFTWARE FOUNDATION. *Python 3.12 Documentation*: `threading`, `queue`, `logging`, `mmap` e `collections`. https://docs.python.org/3.12/
 - LINUX KERNEL DOCUMENTATION. *The /proc Filesystem*; *Documentation for /proc/[pid]/io*. https://docs.kernel.org/filesystems/proc.html
 - Repositório do projeto: https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch.
-- Vídeo de demonstração: .
+- Vídeo de demonstração: https://drive.google.com/file/d/1Fo2lFxFHPE1GVW7_KCBlKOorEntI1IKo/view?usp=sharing
 
 </div>

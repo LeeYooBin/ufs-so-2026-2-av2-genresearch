@@ -8,8 +8,6 @@
 
 ## Vídeo
 
-**URL:**
+**URL:**: https://drive.google.com/file/d/1Fo2lFxFHPE1GVW7_KCBlKOorEntI1IKo/view?usp=sharing
 
 **Data de gravação:** [20/10/2026]
-
-**Duração:** [XX:XX]

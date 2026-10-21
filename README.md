@@ -4,7 +4,7 @@
 
 **Discente:** Roberdan Tamyr dos Santos Feitosa Junior
 [**Relatório técnico**](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/relatorio.pdf)  
-**Vídeo de demonstração**
+[**Vídeo de demonstração**](https://drive.google.com/file/d/1Fo2lFxFHPE1GVW7_KCBlKOorEntI1IKo/view?usp=sharing)
 [**Guia do vídeo**](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/VIDEO.md)  
 [**Declaração de uso de IA**](https://github.com/LeeYooBin/ufs-so-2026-2-av2-genresearch/tree/main/docs/declaracao_de_uso_ia.pdf)
 
